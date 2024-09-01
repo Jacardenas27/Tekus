@@ -1,0 +1,4 @@
+USE [Tekus]
+GO
+CREATE SCHEMA [Tekus]
+GO
