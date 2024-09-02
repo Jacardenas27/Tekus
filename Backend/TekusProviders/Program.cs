@@ -42,6 +42,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IProviderService, ProviderService>();
 builder.Services.AddScoped<IProviderRepository, ProviderRepository>();
+builder.Services.AddScoped<IServiceService, ServiceService>();
+builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<IDetailsProviderServiceService, DetailsProviderServiceService>();
+builder.Services.AddScoped<IDetailsProviderServiceRepository, DetailsProviderServiceRepository>();
+builder.Services.AddScoped<IDetailsServiceCountryService, DetailsServiceCountryService>();
+builder.Services.AddScoped<IDetailsServiceCountryRepository, DetailsServiceCountryRepository>();
+builder.Services.AddHttpClient();
+
 
 var app = builder.Build();
 

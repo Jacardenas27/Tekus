@@ -12,7 +12,7 @@ CREATE TABLE [Tekus].[DetailsProviderService](
 	[id] [uniqueidentifier] NOT NULL,
 	[idProvider] [uniqueidentifier] NOT NULL,
 	[idService] [uniqueidentifier] NOT NULL,
-	[cost_per_hour] [float] NOT NULL,
+	[costPerHour] [float] NOT NULL,
  CONSTRAINT [PK_DetailsProviderService] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
